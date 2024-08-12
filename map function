@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+export function App(props) {
+  const myArray = ['apple', 'banana', 'orange'];
+
+const myList = myArray.map((item) => <li key={null}>{item}</li>)
+  return (
+    <div className='App'>
+      <h1>Hello React.</h1>
+      <ol>{myList}</ol>
+    </div>
+  );
+}
+
+// Log to console
+console.log('Hello console')
